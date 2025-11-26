@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>产品展示 - 示例</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="logo">Winston Tools</div>
+      <nav class="menu">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Commercial and Industrial Class Products</h1>
+        <p>Focus on providing excellent production aids and solutions</p>
+        <a class="btn" href="#products">Browse products</a>
+      </div>
+      <div class="hero-image" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="products" class="products">
+      <!-- 产品卡片示例（复制/替换以新增产品） -->
+      <article class="card" data-title="Holders & Adapters" data-desc="Offers a variety of grip designs">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1581091012184-5c8f07c1e2c0?auto=format&fit=crop&w=800&q=80')"></div>
+        <div class="card-body">
+          <h3>Holders & Adapters</h3>
+          <p>Offers a variety of grip designs</p>
+          <button class="detail-btn">Details</button>
+        </div>
+      </article>
+
+      <article class="card" data-title="Socket Arms" data-desc="Modular design for quick on-site deployment and maintenance">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1601045840672-0f3c8e0cd7c8?auto=format&fit=crop&w=800&q=80')"></div>
+        <div class="card-body">
+          <h3>Socket Arms</h3>
+          <p>Modular design for quick on-site deployment and maintenance</p>
+          <button class="detail-btn">Details</button>
+        </div>
+      </article>
+
+      <article class="card" data-title="Bases" data-desc="Applicable to various surfaces and systems">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80')"></div>
+        <div class="card-body">
+          <h3>Bases</h3>
+          <p>Applicable to various surfaces and systems</p>
+          <button class="detail-btn">Details</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About us</h2>
+      <p>We are the leading manufacturer of rugged and versatile mounting solutions for nearly any application and device, including phones, tablets,  cameras, GPS systems, laptops, marine electronics, printers, radios, and much more.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact us</h2>
+      <p>Email: team.cw@outlook.com </p>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div style="margin-top:20px;">
+        <a class="btn" href="mailto:team.cw@outlook.com">Contact us to know more</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
